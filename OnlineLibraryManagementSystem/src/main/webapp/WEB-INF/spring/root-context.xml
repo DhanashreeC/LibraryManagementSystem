@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+		
+	<bean id="bookDAO" class="com.my.onlinelibrary.dao.BookDAO"/>
+	<bean id="userDAO" class="com.my.onlinelibrary.dao.UserDAO"/>
+	<bean id="bookrequestDAO" class="com.my.onlinelibrary.dao.RequestDAO"/>
+	<bean id="circulationDAO" class="com.my.onlinelibrary.dao.CirculationDAO"/>
+	
+	<bean id="bookValidator" class="com.my.onlinelibrary.validator.BookValidator"/>
+	<bean id="bookreservationValidator" class="com.my.onlinelibrary.validator.BookReservationValidator"/>
+	<bean id="userValidator" class="com.my.onlinelibrary.validator.UserValidator"/>
+	
+	<bean id="libraryMember" class="com.my.onlinelibrary.pojo.LibraryMember"/>
+	<bean id="libraryUser" class="com.my.onlinelibrary.pojo.LibraryUsers"/>
+	
+	
+</beans>

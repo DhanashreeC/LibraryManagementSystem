@@ -1,0 +1,2 @@
+INSERT INTO authority (id, role) VALUES (1, 'ROLE_ADMIN'),(2, 'ROLE_MEMBER');
+INSERT INTO libraryusers(userID, active, emailId, firstName, lastName, password, userName, authority_id) VALUES ('1', 'T', 'admin@gmail.com', 'Dhanashree', 'Chavan', 'admin', 'admin', '1');
